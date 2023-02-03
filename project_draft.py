@@ -45,14 +45,18 @@ for i in range(5): # Do data visualization part for 5 times
             cursor.execute(sql)  # execute sql sentence
             db.commit()  # commit the database
 
-    # Read data from database"test"
+    '''
+    Read data from Database"test"
+    '''
     test_li = test.values.tolist()  # read the data from the database named "test"
     result = []  # store values of the column
     for s_li in test_li:
         result.append(s_li[1])  # Add new numbers at the end of the second column of the array based on the input value on the CC1310
     data_id = [i for i in (1, len(result)+1)]
 
-    # For data visualization
+    '''
+    For data visualization
+    '''
     fig = go.Figure()
     fig.add_trace(
         go.Scatter(
@@ -71,7 +75,9 @@ for i in range(5): # Do data visualization part for 5 times
     )
     fig.show()
 
-
+'''
+Finish reading, storing, visualization
+'''
 cursor.close()
 db.close()
 
