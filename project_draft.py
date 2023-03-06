@@ -82,4 +82,4 @@ cursor.close()
 db.close()
 
 # usb-Texas_Instruments_XDS110__03.00.00.18__Embed_with_CMSIS-DAP_L201A07F-if00
-# usb-Texas_Instruments_XDS110__03.00.00.18__Embed_with_CMSIS-DAP_L201A07F-if03
+# usb-Texas_Instruments_XDS110__03.00.00.18__Embed_with_CMSIS-DAP_L201A07F-if03 
