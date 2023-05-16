@@ -40,6 +40,7 @@
     b'238\r\n'
   
     b'99\r\n'.
+    
     **Ambuj sets** b'NOK\r\n' is a symbol of the completion of each set of data transmission, and b'OK\r\n' is a symbol of the start of each set of data transmission.
   
 3. cursor.rowcount == 100: Exit the loop after 100 temperature values are stored in the database。
