@@ -41,6 +41,7 @@
   
   b'99\r\n'.
   **Ambuj sets** b'NOK\r\n' is a symbol of the completion of each set of data transmission, and b'OK\r\n' is a symbol of the start of each set of data transmission.
+  
 3. cursor.rowcount == 100: Exit the loop after 100 temperature values are stored in the database。
 4. temperature = round(val / 65535 * 160 - 40, 4). I mentioned in the paper that the temperature processing part is also initially configured in the Backscatter Sensor. We need to process the obtained 238 and 99, which is explained in the paper. Similarly, this part of the code also **needs to be changed** according to the actual situation.
 
