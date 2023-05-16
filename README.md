@@ -66,10 +66,13 @@
 3. Get the disk I/O counters after waiting: disk_io_counters_end = psutil.disk_io_counters()
 4. Compute the difference in CPU and disk I/O counters and the time interval: 
     read_bytes = disk_io_counters_end.read_bytes - disk_io_counters_start.read_bytes
+    
     write_bytes = disk_io_counters_end.write_bytes - disk_io_counters_start.write_bytes
+    
     time_diff = time.monotonic() - disk_io_counters_start.__getattribute__("busy_time")
 5. Compute the read/write bytes per second: 
     read_bytes_per_sec = read_bytes / time_diff
+    
     write_bytes_per_sec = write_bytes / time_diff
 6. Estimate energy consumption using a weighted sum of CPU utilization and read/write bytes per second: energy_consumption = 1.36 * psutil.cpu_percent() + 0.22 * read_bytes_per_sec + 0.10 * write_bytes_per_sec
 7. Print the estimated energy consumption in Watt: print("Estimated energy consumption: %.2f W" % energy_consumption)
