@@ -20,30 +20,30 @@
 
 # Plot_LightAcceleration
 1. motion_x = [row[2]/9.8 for row in rows] # Convert to g
-2. time = [0, 0.5] # Set the initial time to 0 and 0.5. Because we set to receive two sets of acceleration and light data every second. Therefore, Set the initial time to 0 and 0.5.
+2. time = [0, 0.5] # Set the initial time to 0 and 0.5. Because **we set to receive two sets of acceleration and light data every second**. Therefore, Set the initial time to 0 and 0.5.
 3. When plotting the data in the database, we need to make corresponding modifications according to our own needs.
-4. # Plot the light vs time graph and # Plot the motion vs time graph. Use basic Pyplot visualization method.
+4. # Plot the light vs time graph and # Plot the motion vs time graph. Use **basic Pyplot visualization method**.
 
 
 # Read_Temperature
-1. For the part that processes raw input, it also depends on the code in the transmitter sensor and needs to be changed.
-2. My sample input here is: 
+1. For the part that processes **raw input**, it also depends on the code in the transmitter sensor and **needs to be changed**.
+2. My **sample input** here is: 
   b'NOK\r\n'
   b'OK\r\n'
   b'238\r\n'
   b'99\r\n'.
-  Ambuj sets b'NOK\r\n' is a symbol of the completion of each set of data transmission, and b'OK\r\n' is a symbol of the start of each set of data transmission.
+  **Ambuj sets** b'NOK\r\n' is a symbol of the completion of each set of data transmission, and b'OK\r\n' is a symbol of the start of each set of data transmission.
 3. cursor.rowcount == 100: Exit the loop after 100 temperature values are stored in the database。
-4. temperature = round(val / 65535 * 160 - 40, 4). I mentioned in the paper that the temperature processing part is also initially configured in the Backscatter Sensor. We need to process the obtained 238 and 99, which is explained in the paper. Similarly, this part of the code also needs to be changed according to the actual situation.
+4. temperature = round(val / 65535 * 160 - 40, 4). I mentioned in the paper that the temperature processing part is also initially configured in the Backscatter Sensor. We need to process the obtained 238 and 99, which is explained in the paper. Similarly, this part of the code also **needs to be changed** according to the actual situation.
 
 
 # Plot_Temperature
-Similar to # plot_LightAcceleration
+**Similar to # plot_LightAcceleration**
 
 # image.py
-1. image.py is an E-paper official .py file provided by pimoroni.com/impression. Watch the Tutorial I mentioned below, you will understand the basic use of E-Paper.
+1. image.py is an E-paper official .py file provided by pimoroni.com/impression. **Watch the Tutorial I mentioned below, you will understand the basic use of E-Paper**.
 2. Youtube Totorial: Set Up a 7 Colour E-Ink Display For Raspberry Pi | Inky Impression 5.7" HAT.
-    https://www.youtube.com/watch?v=daO46JaVHOs&t=200s
+    **https://www.youtube.com/watch?v=daO46JaVHOs&t=200s**
 3. Put image.py inside the same folder as other .py files.
 
 # EPaperTemperature
