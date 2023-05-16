@@ -47,5 +47,9 @@
 3. Put image.py inside the same folder as other .py files.
 
 # EPaperTemperature.py
-1. 
+1. To display an image on E-Paper, just call a simple line of code: **os.system("python image.py ./plots/Temperature.png")**
+2. In order to obtain Temperature.png, we need to run Plot_Temperature first.
+    Generate the plots folder:
+    if not os.path.exists('plots'):
+    os.makedirs('plots')
 
