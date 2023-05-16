@@ -65,6 +65,8 @@
     
 3. Put image.py inside the same folder as other .py files.
 
+4. In the Youtube video, in addition to image.py, pimoroni.com/impression also provides other demo codes, which we can also use for applications.
+
 
 # EPaperTemperature.py
 1. In order to obtain Temperature.png, we need to run Plot_Temperature.py first.
