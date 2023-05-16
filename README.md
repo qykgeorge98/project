@@ -82,7 +82,7 @@
 5. Similarly, Light and Acceleration can also be displayed on E-Paper, the same operations.
 
 
-# energyConsumption.py
+# EnergyConsumption.py
 1. The code is using the psutil library to measure disk I/O counters and compute the estimated energy consumption based on CPU utilization and read/write bytes per second. It uses the disk_io_counters() function to get the initial and final disk I/O counters, and the time.sleep() function to wait for a few seconds between the measurements.
 2. Get the initial disk I/O counters: disk_io_counters_start = psutil.disk_io_counters()
 3. Get the disk I/O counters after waiting: disk_io_counters_end = psutil.disk_io_counters()
