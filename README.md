@@ -56,4 +56,5 @@
     Generate a Temperature.png file:
     fig.write_image(
     "plots/Temperature.png")
+ 3. Similarly, Light and Acceleration can also be displayed on E-Paper, the same operations.
 
