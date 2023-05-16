@@ -2,6 +2,9 @@
 
 # Qiao Yukai's email: qiaoyukai98@gmail.com
 
+# Raspberry Pi Configuration
+**https://docs.google.com/document/d/1PFaJGmTYKf08iQsmHGXIX1LxSSm5EdAI10AbPjyVebM/edit**
+
 
 # Read_LightAcceleration.py
 1. Open a serial port connection using the serial.Serial() function. **The port name, baud rate and timeout need to be specified**. The baud rate is configured in the SmartRF Studio software.
