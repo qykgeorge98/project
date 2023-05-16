@@ -48,7 +48,7 @@
 
 
 # Plot_Temperature.py
-**Similar to # plot_LightAcceleration**
+**Similar to plot_LightAcceleration.py**
 
 
 # image.py
