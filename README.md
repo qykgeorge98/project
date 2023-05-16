@@ -64,6 +64,7 @@
 1. image.py is an E-paper official .py file provided by pimoroni.com/impression. **Watch the Tutorial I mentioned below, you will understand the basic use of E-Paper**.
 
 2. **Youtube Totorial**: Set Up a 7 Colour E-Ink Display For Raspberry Pi | Inky Impression 5.7" HAT.
+    
     **https://www.youtube.com/watch?v=daO46JaVHOs&t=200s**
     
 3. Put image.py inside the same folder as other .py files.
