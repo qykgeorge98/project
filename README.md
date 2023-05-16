@@ -9,6 +9,7 @@
 6. Define variables for data storage: The variables light, motion_X, motion_Y, and motion_Z are initialized to None. These variables will hold the data read from the serial input.
 7. Read data from serial input and insert into the database.
 8. When reading data and storing data in the database, corresponding modifications need to be made. **It depends on the code inside the sender sensor written by Ambuj**.
+
     b'light=278.40 lux\n'
     b'motion: X=0.16 \n'
     b'motion: Y=0.10 \n'
@@ -28,6 +29,7 @@
 # Read_Temperature.py
 1. For the part that processes **raw input**, it also depends on the code in the transmitter sensor and **needs to be changed**.
 2. My **sample input** here is: 
+
   b'NOK\r\n'
   b'OK\r\n'
   b'238\r\n'
