@@ -22,7 +22,7 @@
 1. motion_x = [row[2]/9.8 for row in rows] # Convert to g
 2. time = [0, 0.5] # Set the initial time to 0 and 0.5. Because **we set to receive two sets of acceleration and light data every second**. Therefore, Set the initial time to 0 and 0.5.
 3. When plotting the data in the database, we need to make corresponding modifications according to our own needs.
-4. # Plot the light vs time graph and # Plot the motion vs time graph. Use **basic Pyplot visualization method**.
+4. Plot the light vs time graph and Plot the motion vs time graph. Use **basic Pyplot visualization method**.
 
 
 # Read_Temperature.py
