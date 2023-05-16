@@ -56,20 +56,26 @@
 
 # image.py
 1. image.py is an E-paper official .py file provided by pimoroni.com/impression. **Watch the Tutorial I mentioned below, you will understand the basic use of E-Paper**.
+
 2. Youtube Totorial: Set Up a 7 Colour E-Ink Display For Raspberry Pi | Inky Impression 5.7" HAT.
     **https://www.youtube.com/watch?v=daO46JaVHOs&t=200s**
+    
 3. Put image.py inside the same folder as other .py files.
 
 
 # EPaperTemperature.py
 1. In order to obtain Temperature.png, we need to run Plot_Temperature.py first.
+
 2. Generate the plots folder:
     if not os.path.exists('plots'):
     os.makedirs('plots')
+    
 3. Generate a Temperature.png file:
     fig.write_image(
     "plots/Temperature.png")
+    
 4. To display an image on E-Paper, call a line of code: **os.system("python image.py ./plots/Temperature.png")**
+
 5. Similarly, Light and Acceleration can also be displayed on E-Paper, the same operations.
 
 
