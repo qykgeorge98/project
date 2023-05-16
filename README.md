@@ -1,6 +1,6 @@
 # project
 
-# Read_LightAcceleration
+# Read_LightAcceleration.py
 1. Open a serial port connection using the serial.Serial() function. **The port name, baud rate and timeout need to be specified**. The baud rate is configured in the SmartRF Studio software.
 2. **ls /dev/serial/by-id/** is used to specify the port name connected to the Raspberry Pi.
 3. The code establishes a connection to an MySQL database using the pymysql.connect() function. 
@@ -18,14 +18,14 @@
 11. Close the cursor and database connection.
 
 
-# Plot_LightAcceleration
+# Plot_LightAcceleration.py
 1. motion_x = [row[2]/9.8 for row in rows] # Convert to g
 2. time = [0, 0.5] # Set the initial time to 0 and 0.5. Because **we set to receive two sets of acceleration and light data every second**. Therefore, Set the initial time to 0 and 0.5.
 3. When plotting the data in the database, we need to make corresponding modifications according to our own needs.
 4. # Plot the light vs time graph and # Plot the motion vs time graph. Use **basic Pyplot visualization method**.
 
 
-# Read_Temperature
+# Read_Temperature.py
 1. For the part that processes **raw input**, it also depends on the code in the transmitter sensor and **needs to be changed**.
 2. My **sample input** here is: 
   b'NOK\r\n'
@@ -37,7 +37,7 @@
 4. temperature = round(val / 65535 * 160 - 40, 4). I mentioned in the paper that the temperature processing part is also initially configured in the Backscatter Sensor. We need to process the obtained 238 and 99, which is explained in the paper. Similarly, this part of the code also **needs to be changed** according to the actual situation.
 
 
-# Plot_Temperature
+# Plot_Temperature.py
 **Similar to # plot_LightAcceleration**
 
 # image.py
@@ -46,6 +46,6 @@
     **https://www.youtube.com/watch?v=daO46JaVHOs&t=200s**
 3. Put image.py inside the same folder as other .py files.
 
-# EPaperTemperature
+# EPaperTemperature.py
 1. 
 
