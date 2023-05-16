@@ -51,7 +51,6 @@
 2. Generate the plots folder:
     if not os.path.exists('plots'):
     os.makedirs('plots')
-    
 3. Generate a Temperature.png file:
     fig.write_image(
     "plots/Temperature.png")
