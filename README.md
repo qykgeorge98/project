@@ -1,6 +1,6 @@
 # project
 
-# Qiao Yukai's email: qiaoyukai98@gmail.com
+# Qiao Yukai's Email Address: qiaoyukai98@gmail.com
 
 # Raspberry Pi Configuration
 **https://docs.google.com/document/d/1PFaJGmTYKf08iQsmHGXIX1LxSSm5EdAI10AbPjyVebM/edit**
