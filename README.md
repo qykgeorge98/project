@@ -40,11 +40,13 @@
 # Plot_Temperature.py
 **Similar to # plot_LightAcceleration**
 
+
 # image.py
 1. image.py is an E-paper official .py file provided by pimoroni.com/impression. **Watch the Tutorial I mentioned below, you will understand the basic use of E-Paper**.
 2. Youtube Totorial: Set Up a 7 Colour E-Ink Display For Raspberry Pi | Inky Impression 5.7" HAT.
     **https://www.youtube.com/watch?v=daO46JaVHOs&t=200s**
 3. Put image.py inside the same folder as other .py files.
+
 
 # EPaperTemperature.py
 1. In order to obtain Temperature.png, we need to run Plot_Temperature.py first.
@@ -56,4 +58,20 @@
     "plots/Temperature.png")
 4. To display an image on E-Paper, call a line of code: **os.system("python image.py ./plots/Temperature.png")**
 5. Similarly, Light and Acceleration can also be displayed on E-Paper, the same operations.
+
+
+# energyConsumption.py
+1. The code is using the psutil library to measure disk I/O counters and compute the estimated energy consumption based on CPU utilization and read/write bytes per second. It uses the disk_io_counters() function to get the initial and final disk I/O counters, and the time.sleep() function to wait for a few seconds between the measurements.
+2. Get the initial disk I/O counters: disk_io_counters_start = psutil.disk_io_counters()
+3. Get the disk I/O counters after waiting: disk_io_counters_end = psutil.disk_io_counters()
+4. Compute the difference in CPU and disk I/O counters and the time interval: 
+    read_bytes = disk_io_counters_end.read_bytes - disk_io_counters_start.read_bytes
+    write_bytes = disk_io_counters_end.write_bytes - disk_io_counters_start.write_bytes
+    time_diff = time.monotonic() - disk_io_counters_start.__getattribute__("busy_time")
+5. Compute the read/write bytes per second: 
+    read_bytes_per_sec = read_bytes / time_diff
+    write_bytes_per_sec = write_bytes / time_diff
+6. Estimate energy consumption using a weighted sum of CPU utilization and read/write bytes per second: energy_consumption = 1.36 * psutil.cpu_percent() + 0.22 * read_bytes_per_sec + 0.10 * write_bytes_per_sec
+7. Print the estimated energy consumption in Watt: print("Estimated energy consumption: %.2f W" % energy_consumption)
+
 
