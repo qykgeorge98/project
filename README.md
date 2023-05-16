@@ -48,13 +48,13 @@
 
 # EPaperTemperature.py
 1. To display an image on E-Paper, just call a simple line of code: **os.system("python image.py ./plots/Temperature.png")**
-2. In order to obtain Temperature.png, we need to run Plot_Temperature first.
-    Generate the plots folder:
+2. In order to obtain Temperature.png, we need to run Plot_Temperature.py first.
+3. Generate the plots folder:
     if not os.path.exists('plots'):
     os.makedirs('plots')
     
-    Generate a Temperature.png file:
+4. Generate a Temperature.png file:
     fig.write_image(
     "plots/Temperature.png")
- 3. Similarly, Light and Acceleration can also be displayed on E-Paper, the same operations.
+5. Similarly, Light and Acceleration can also be displayed on E-Paper, the same operations.
 
