@@ -11,8 +11,11 @@
 8. When reading data and storing data in the database, corresponding modifications need to be made. **It depends on the code inside the sender sensor written by Ambuj**.
 
     b'light=278.40 lux\n'
+    
     b'motion: X=0.16 \n'
+    
     b'motion: Y=0.10 \n'
+    
     b'motion: Z=0.87 \n'
 9. for i in range(50): Read 50 groups of data. for j in range(4): Four lines as one group.
 10. Insert data into the database: The code constructs an SQL query using the variables light, motion_X, motion_Y, motion_Z, and local_time and inserts the values into the "test" table using the cursor.execute() function. The changes are committed to the database using db.commit().
@@ -31,8 +34,11 @@
 2. My **sample input** here is: 
 
   b'NOK\r\n'
+  
   b'OK\r\n'
+  
   b'238\r\n'
+  
   b'99\r\n'.
   **Ambuj sets** b'NOK\r\n' is a symbol of the completion of each set of data transmission, and b'OK\r\n' is a symbol of the start of each set of data transmission.
 3. cursor.rowcount == 100: Exit the loop after 100 temperature values are stored in the database。
